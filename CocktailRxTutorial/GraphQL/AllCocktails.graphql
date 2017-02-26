@@ -1,0 +1,22 @@
+query GetAllCocktails {
+  viewer {
+    allCocktails {
+      edges {
+        cursor
+        node {
+          id
+          name
+          ingredients {
+            edges {
+              node {
+                id
+                name
+                unit
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
