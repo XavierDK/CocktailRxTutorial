@@ -12,5 +12,7 @@ target 'CocktailRxTutorial' do
   pod 'RxOptional'
   pod 'Swinject', '~> 2.0.0'
   pod 'SwinjectStoryboard', '~> 1.0.0'
+  pod 'Reusable'
+  pod 'Result'
   
 end

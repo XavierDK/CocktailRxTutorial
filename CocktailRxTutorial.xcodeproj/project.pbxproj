@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2503F7A71E63866600473026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503F7A61E63866600473026 /* AppDelegate.swift */; };
-		2503F7A91E63866600473026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503F7A81E63866600473026 /* ViewController.swift */; };
-		2503F7AC1E63866600473026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2503F7AA1E63866600473026 /* Main.storyboard */; };
 		2503F7AE1E63866600473026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2503F7AD1E63866600473026 /* Assets.xcassets */; };
 		2503F7B11E63866600473026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2503F7AF1E63866600473026 /* LaunchScreen.storyboard */; };
 		2503F7BB1E6387F000473026 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2503F7BA1E6387F000473026 /* schema.json */; };
 		2503F7BD1E63880000473026 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503F7BC1E63880000473026 /* API.swift */; };
 		2503F7BF1E63882100473026 /* AllCocktails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2503F7BE1E63882100473026 /* AllCocktails.graphql */; };
+		2515FE8F1E6832CF0023F9F6 /* CocktailsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE8E1E6832CF0023F9F6 /* CocktailsListViewModel.swift */; };
+		2515FE911E6832D90023F9F6 /* CocktailsListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE901E6832D90023F9F6 /* CocktailsListViewModelType.swift */; };
+		2515FE951E68335C0023F9F6 /* CocktailsListController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2515FE941E68335C0023F9F6 /* CocktailsListController.storyboard */; };
+		2515FE971E6833670023F9F6 /* CocktailsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE961E6833670023F9F6 /* CocktailsListController.swift */; };
+		2515FE9A1E6833F10023F9F6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE991E6833F10023F9F6 /* Coordinator.swift */; };
+		2515FE9C1E6834060023F9F6 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE9B1E6834060023F9F6 /* AppContext.swift */; };
+		2515FE9E1E6834240023F9F6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE9D1E6834240023F9F6 /* AppCoordinator.swift */; };
+		2515FEA01E688EAA0023F9F6 /* CocktailsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515FE9F1E688EAA0023F9F6 /* CocktailsListCoordinator.swift */; };
 		25BE80741E639502006E7B8F /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BE80731E639502006E7B8F /* Cocktail.swift */; };
 		25BE80761E639512006E7B8F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BE80751E639512006E7B8F /* Ingredient.swift */; };
 		25BE80781E6395DE006E7B8F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BE80771E6395DE006E7B8F /* APIService.swift */; };
@@ -25,14 +31,20 @@
 /* Begin PBXFileReference section */
 		2503F7A31E63866600473026 /* CocktailRxTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailRxTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2503F7A61E63866600473026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2503F7A81E63866600473026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2503F7AB1E63866600473026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2503F7AD1E63866600473026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2503F7B01E63866600473026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2503F7B21E63866600473026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2503F7BA1E6387F000473026 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		2503F7BC1E63880000473026 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2503F7BE1E63882100473026 /* AllCocktails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllCocktails.graphql; sourceTree = "<group>"; };
+		2515FE8E1E6832CF0023F9F6 /* CocktailsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocktailsListViewModel.swift; path = ViewModels/CocktailsListViewModel.swift; sourceTree = "<group>"; };
+		2515FE901E6832D90023F9F6 /* CocktailsListViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocktailsListViewModelType.swift; path = ViewModels/CocktailsListViewModelType.swift; sourceTree = "<group>"; };
+		2515FE941E68335C0023F9F6 /* CocktailsListController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CocktailsListController.storyboard; path = Views/CocktailsListController.storyboard; sourceTree = "<group>"; };
+		2515FE961E6833670023F9F6 /* CocktailsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocktailsListController.swift; path = Views/CocktailsListController.swift; sourceTree = "<group>"; };
+		2515FE991E6833F10023F9F6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Coordinators/Coordinator.swift; sourceTree = "<group>"; };
+		2515FE9B1E6834060023F9F6 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppContext.swift; path = Coordinators/AppContext.swift; sourceTree = "<group>"; };
+		2515FE9D1E6834240023F9F6 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = Coordinators/AppCoordinator.swift; sourceTree = "<group>"; };
+		2515FE9F1E688EAA0023F9F6 /* CocktailsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocktailsListCoordinator.swift; path = Coordinators/CocktailsListCoordinator.swift; sourceTree = "<group>"; };
 		25BE80731E639502006E7B8F /* Cocktail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cocktail.swift; path = Models/Cocktail.swift; sourceTree = "<group>"; };
 		25BE80751E639512006E7B8F /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ingredient.swift; path = Models/Ingredient.swift; sourceTree = "<group>"; };
 		25BE80771E6395DE006E7B8F /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Services/APIService.swift; sourceTree = "<group>"; };
@@ -75,14 +87,13 @@
 		2503F7A51E63866600473026 /* CocktailRxTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2515FE981E6833C20023F9F6 /* Coordinators */,
 				25BE80711E639426006E7B8F /* Models */,
 				25BE80721E63942F006E7B8F /* Views */,
 				25BE80701E639420006E7B8F /* ViewModels */,
 				25BE806F1E63941A006E7B8F /* Services */,
 				2503F7B91E6387F000473026 /* GraphQL */,
 				2503F7A61E63866600473026 /* AppDelegate.swift */,
-				2503F7A81E63866600473026 /* ViewController.swift */,
-				2503F7AA1E63866600473026 /* Main.storyboard */,
 				2503F7AD1E63866600473026 /* Assets.xcassets */,
 				2503F7AF1E63866600473026 /* LaunchScreen.storyboard */,
 				2503F7B21E63866600473026 /* Info.plist */,
@@ -100,6 +111,17 @@
 			path = GraphQL;
 			sourceTree = "<group>";
 		};
+		2515FE981E6833C20023F9F6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2515FE9B1E6834060023F9F6 /* AppContext.swift */,
+				2515FE991E6833F10023F9F6 /* Coordinator.swift */,
+				2515FE9D1E6834240023F9F6 /* AppCoordinator.swift */,
+				2515FE9F1E688EAA0023F9F6 /* CocktailsListCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
 		25BE806F1E63941A006E7B8F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +133,8 @@
 		25BE80701E639420006E7B8F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2515FE8E1E6832CF0023F9F6 /* CocktailsListViewModel.swift */,
+				2515FE901E6832D90023F9F6 /* CocktailsListViewModelType.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -128,6 +152,8 @@
 		25BE80721E63942F006E7B8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2515FE961E6833670023F9F6 /* CocktailsListController.swift */,
+				2515FE941E68335C0023F9F6 /* CocktailsListController.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -213,10 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2515FE951E68335C0023F9F6 /* CocktailsListController.storyboard in Resources */,
 				2503F7BB1E6387F000473026 /* schema.json in Resources */,
 				2503F7B11E63866600473026 /* LaunchScreen.storyboard in Resources */,
 				2503F7AE1E63866600473026 /* Assets.xcassets in Resources */,
-				2503F7AC1E63866600473026 /* Main.storyboard in Resources */,
 				2503F7BF1E63882100473026 /* AllCocktails.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2503F7A91E63866600473026 /* ViewController.swift in Sources */,
+				2515FE9C1E6834060023F9F6 /* AppContext.swift in Sources */,
+				2515FE9E1E6834240023F9F6 /* AppCoordinator.swift in Sources */,
 				2503F7BD1E63880000473026 /* API.swift in Sources */,
 				25BE80761E639512006E7B8F /* Ingredient.swift in Sources */,
+				2515FE911E6832D90023F9F6 /* CocktailsListViewModelType.swift in Sources */,
 				2503F7A71E63866600473026 /* AppDelegate.swift in Sources */,
+				2515FEA01E688EAA0023F9F6 /* CocktailsListCoordinator.swift in Sources */,
+				2515FE8F1E6832CF0023F9F6 /* CocktailsListViewModel.swift in Sources */,
+				2515FE9A1E6833F10023F9F6 /* Coordinator.swift in Sources */,
 				25BE807A1E6398EA006E7B8F /* CocktailError.swift in Sources */,
+				2515FE971E6833670023F9F6 /* CocktailsListController.swift in Sources */,
 				25BE80781E6395DE006E7B8F /* APIService.swift in Sources */,
 				25BE80741E639502006E7B8F /* Cocktail.swift in Sources */,
 			);
@@ -303,14 +335,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2503F7AA1E63866600473026 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2503F7AB1E63866600473026 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2503F7AF1E63866600473026 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
